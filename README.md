@@ -71,4 +71,4 @@ If you see errors like "git command not found", install Git:
 
 Now you have successfully cloned and set up your repository! 
      
-![image alt](https://github.com/SeethaIndiran/Fetch-Rewards-Take-Home-Test/blob/1fad1b7c8f6030b84efb34017eb9b3bb21e01042/Untitled%20design%20(2).png)
+
