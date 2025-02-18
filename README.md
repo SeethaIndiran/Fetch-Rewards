@@ -3,7 +3,7 @@
 This is a Native  Android application developed for the Fetch Interview. The application retrieves data from a provided URL and displays it in an easy-to-read list.
 
 ## Features
- Fetches and displays data from [Fetch Hiring API](https://fetch-hiring.s3.amazonaws.com/hiring.json).
+ Fetches and displays data from Fetch API
 
  Groups items by `listId` and sorts them by `listId` and `name`. 
  
