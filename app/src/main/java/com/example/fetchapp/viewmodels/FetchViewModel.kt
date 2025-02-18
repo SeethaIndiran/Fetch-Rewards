@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.fetchapp.data.FetchRepository
+import com.example.fetchapp.data.FetchRepositoryImpl
 import com.example.fetchapp.models.Item
 import com.example.fetchapp.utils.ScreenState
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class FetchViewModel @Inject constructor( private val repository: FetchRepository): ViewModel() {
+class FetchViewModel @Inject constructor( private val repository: FetchRepositoryImpl): ViewModel() {
 
     private val _items = MutableLiveData<ScreenState< List<Item>>>()
     val items: LiveData<ScreenState<List<Item>>> get() = _items
@@ -24,7 +24,7 @@ class FetchViewModel @Inject constructor( private val repository: FetchRepositor
                 _items.postValue(ScreenState.Loading(null))
 
             try{
-                val response = repository.fetchItems()
+                val response = repository.getItems()
 
                 _items.postValue(ScreenState.Success(response))
             }catch (e:Exception){

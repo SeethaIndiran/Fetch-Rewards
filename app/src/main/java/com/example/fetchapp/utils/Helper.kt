@@ -17,7 +17,7 @@ object Helper {
         val filteredItemList = itemList.filter { !it.name.isNullOrBlank() }
         val listIdToItemsMap = filteredItemList.groupBy { it.listId }
         val sortedMapValues = listIdToItemsMap.mapValues { (_, value) -> value.sortedBy { it.name } }
-        val sortedByListId = sortedMapValues.toSortedMap()
+        val sortedByListId = sortedMapValues.toSortedMap(compareBy { it.toInt() })
 
         return sortedByListId.map { (listId, items) ->
             ParentItem(
@@ -27,6 +27,8 @@ object Helper {
             )
         }
     }
+
+
 
 
 }

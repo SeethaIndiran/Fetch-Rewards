@@ -1,6 +1,8 @@
 package com.example.fetchapp.di
 
 import com.example.fetchapp.data.FetchAPIService
+import com.example.fetchapp.data.FetchRepository
+import com.example.fetchapp.data.FetchRepositoryImpl
 import com.example.fetchapp.utils.Constants
 import dagger.Module
 import dagger.Provides
@@ -20,6 +22,12 @@ object AppModule {
             .baseUrl(Constants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build().create(FetchAPIService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideWeatherRepository(api: FetchAPIService): FetchRepository {
+        return FetchRepositoryImpl(api)
     }
 
 
