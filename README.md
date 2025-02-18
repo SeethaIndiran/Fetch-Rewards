@@ -32,7 +32,7 @@ Async Processing: Coroutines
 
 3.Under "Clone", copy the URL (It will look like this):
 
-(https://github.com/SeethaIndiran/Fetch-Rewards-Take-Home-Test)
+https://github.com/SeethaIndiran/Fetch-Rewards-Take-Home-Test
 
 ###  Step 2: Open Terminal or Command Prompt
 Depending on your OS, open one of the following:
@@ -46,7 +46,8 @@ cd Documents
 
 ###  Step 4: Clone the Repository
 Run the following command, replacing <repo-url> with your copied URL:
-git clone https://github.com/johndoe/fetch-hiring.git
+git clone 
+https://github.com/SeethaIndiran/Fetch-Rewards-Take-Home-Test
 
 ### Step 5: Navigate Into the Project Folder
 Once cloning is complete, move into the project folder using:
