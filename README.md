@@ -32,7 +32,7 @@ Async Processing: Coroutines
 
 3.Under "Clone", copy the URL (It will look like this):
 
-https://github.com/SeethaIndiran/Fetch-Rewards
+(https://github.com/SeethaIndiran/Fetch-Rewards-Take-Home-Test)
 
 ###  Step 2: Open Terminal or Command Prompt
 Depending on your OS, open one of the following:
